@@ -1,0 +1,17 @@
+#enter the marks of the student 
+a=float(input("Enter Marks in English :"))
+b=float(input("Enter Marks in Maths:"))
+c=float(input("Enter Marks in Physics:"))
+d=float(input("Enter Marks in Chemistry:"))
+e=float(input("Enter Marks in Computer Science:"))
+#this avg will calculate the average marks of the student and it will also display the percentage of the student
+avg=((a+b+c+d+e)/500)*100
+#in this condition if the student marks will be greater than 80 the it will print the print statement or else it will go to next condition
+if(avg>=80):
+    print("Congratulations ! You are pass and scored the percentage ", avg)
+elif(avg>=60 and avg<80):
+    print("Congratulations ! You are pass and scored the percentage ", avg )
+elif (avg>=40 and avg<60):
+    print("Congratulations !You are pass and scored the percentage ", avg)
+elif (avg<40):
+    print( "You are fail")
