@@ -1,0 +1,25 @@
+class base1(object):
+    def __init__(self):
+        self.str1="Hello"
+        print(self.str1)
+        print("base1")
+
+class base2(object):
+    def __init__(self):
+        self.str2="B1"
+        print(self.str2)
+        print("base2")
+
+class Derived(base1,base2):
+    def __init__(self):
+        #calling constructor of base1
+        #and base2 classes
+        base1.__init__(self)
+        base2.__init__(self)
+        print("Derived")
+
+    def printstrs(self):
+        print(self.str1,self.str2)
+
+object=Derived()
+object.printstrs
